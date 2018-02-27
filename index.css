@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width:100%;
+    min-height:100%;
+}
+
+body {
+    background: url(img/bg2.jpg) no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    font-family: "宋体";
+}
+.clearfix:after{
+    clear:both;
+    display: table;
+    content: '';
+}
+.left{
+    float:left;
+}
+.right{
+    float:right
+}
+.container {
+    position: absolute;
+    -webkit-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -ms-transform: perspective(1000px);
+    -o-transform: perspective(1000px);
+    transform: perspective(1000px);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin:  center center;
+    -moz-transform-origin: center center ;
+    -ms-transform-origin: center center ;
+    -o-transform-origin: center center ;
+    transform-origin: center center ;
+    width: 60%;
+    height: 60%;
+    left: 20%;
+    top: 20%;
+}
+
+.element, .js_current_dom {
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+.btn_circle {
+    height: 100px;
+    width: 100px;
+    border:20px solid #eee;
+    line-height: 100px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #f00;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    z-index: 9;
+    color:#fff;
+    -webkit-transition:all 0.7s linear;
+    -moz-transition:all 0.7s linear;
+    -ms-transition:all 0.7s linear;
+    -o-transition:all 0.7s linear;
+    transition:all 0.7s linear;
+}
+.btn_circle:hover{
+    background-color: darkorange;
+    border-color: #fff;
+}
+.btn_start{
+    position: static;
+    margin:25px auto 0 auto;
+}
+.mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 999;
+}
+
+.lucky_icon {
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    margin-left:15%;
+}
+.lucky_userInfo{
+    position: absolute;
+    height:100px;
+    width:100px;
+    color:#fff;
+    font-size: 24px;
+}
+.lucky_list{
+    width:760px;
+    height:560px;
+    padding:20px;
+    position: relative;
+    margin:0 auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.lpl_userInfo{
+    width:84px;
+    height:100px;
+    text-align: center;
+    float: left;
+    margin-bottom:10px;
+}
+.lpl_userImage{
+    width:60px;
+    height:60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.lpl_userName{
+    margin-top:12px;
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    color:#fff;
+
+}
+.lucky_userName{
+    text-align: center;
+    margin-top:12px;
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.lucky_title{
+    text-align: center;
+    width:100%;
+    font-size:30px;
+    font-weight: bold;
+    color:darkorange;
+    height:150px;
+    line-height: 150px;
+    background:url('img/topbg.png') no-repeat center center;
+}
+.lucky_prize{
+    width:280px;
+}
+.lucky_people_list{
+    width:440px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.lucky_prize_box{
+    height:200px;
+    display: flex;
+    flex-direction: row;
+}
+.lucky_prize_direction{
+    width:70px;
+    height:100%;
+    background-color: transparent;
+    border:none;
+    color:#fff;
+    font-size: 60px;
+    text-align: center;
+
+}
+.lucky_prize_direction.active{
+    color:#f22;
+}
+button:focus{
+    outline: none;
+}
+.lucky_prize_picture{
+    width:160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lucky_prize_show{
+    max-width: 100%;
+    max-height:100%;
+}
+.lucky_people_title{
+    width:100%;
+    height:60px;
+    background-color: #f22;
+    font-size: 24px;
+    color:#fff;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+}
+.lucky_setting{
+    height:50px;
+    background-color: #f22;
+    font-size: 16px;
+    color:#fff;
+    text-align: left;
+    line-height: 50px;
+    padding:0 10px;
+    font-weight: bold;
+    margin-top:25px;
+}
+.select_box{
+    float: right;
+    margin-top:1px;
+}
+.select_lucky_number{
+    font-size: 22px;
+    border:1px solid #eee;
+    outline: none;
+}
+.lucky_number{
+    font-size: 24px;
+}
+.lucky_prize_title{
+    height:50px;
+    background-color: #f22;
+    color:#fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    margin-top:25px;
+}
+.lpl_list{
+    margin-top:20px;
+    height:480px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+.loader_file{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index:999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    font-size: 30px;
+}
+
+.none {
+    display: none;
+}
